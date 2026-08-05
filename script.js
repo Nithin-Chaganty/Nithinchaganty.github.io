@@ -1,22 +1,21 @@
-// Progressive enhancement only — the site is fully functional without this file.
-document.addEventListener('DOMContentLoaded', () => {
-  const links = document.querySelectorAll('.nav a');
-  const sections = Array.from(links)
-    .map(link => document.querySelector(link.getAttribute('href')))
-    .filter(Boolean);
+const menuButton = document.querySelector(".menu-toggle");
+const navigation = document.querySelector(".site-nav");
 
-  if (!('IntersectionObserver' in window) || sections.length === 0) return;
+if (menuButton && navigation) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = navigation.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+  });
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute('id');
-        links.forEach(link => {
-          link.style.color = link.getAttribute('href') === `#${id}` ? 'var(--teal)' : '';
-        });
-      }
+  navigation.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navigation.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
     });
-  }, { rootMargin: '-40% 0px -55% 0px' });
+  });
+}
 
-  sections.forEach(section => observer.observe(section));
-});
+const year = document.querySelector("#year");
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
