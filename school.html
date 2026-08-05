@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School &amp; Education — Your Name</title>
+<meta name="description" content="Coursework, academic projects, and education.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="writing.html">Writing</a>
+      <a href="school.html">School &amp; Education</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">&#9776;</button>
+      <button class="btn-subscribe" data-subscribe-open>Subscribe</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-head">
+    <div class="wrap">
+      <h1>School &amp; Education</h1>
+      <p>Coursework and academic projects from Georgia Tech and NC State.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+      <section style="padding-bottom:48px;">
+        <h2 style="font-size:20px;font-weight:600;margin:0 0 20px;">Education</h2>
+        <div style="border-top:1px solid var(--border);">
+          <div style="display:flex;gap:24px;padding:18px 0;border-bottom:1px solid var(--border);flex-wrap:wrap;">
+            <span style="color:var(--text-muted);font-size:14.5px;min-width:110px;">2025 &ndash; present</span>
+            <span style="font-size:15.5px;"><strong style="font-weight:600;">M.S. Analytics</strong> &mdash; Georgia Institute of Technology</span>
+          </div>
+          <div style="display:flex;gap:24px;padding:18px 0;border-bottom:1px solid var(--border);flex-wrap:wrap;">
+            <span style="color:var(--text-muted);font-size:14.5px;min-width:110px;">2021 &ndash; 2025</span>
+            <span style="font-size:15.5px;"><strong style="font-weight:600;">B.S. Business Administration</strong>, IT Concentration &mdash; NC State University</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="filters">
+        <button class="chip is-active" data-filter="all">All</button>
+        <button class="chip" data-filter="gatech">Georgia Tech</button>
+        <button class="chip" data-filter="ncstate">NC State</button>
+      </div>
+
+      <div class="feed">
+      <article class="post-card" data-tags="gatech">
+        <div class="thumb">
+          <img src="images/post-4.jpg" alt="" onerror="this.parentElement.innerHTML='&lt;span class=thumb-placeholder&gt;images/post-4.jpg&lt;/span&gt;'">
+        </div>
+        <p class="post-eyebrow">Georgia Tech</p>
+        <a class="post-title-link" href="post.html">
+          <h2 class="post-title">Course project title</h2>
+        </a>
+        <p class="post-excerpt">Course name, the task, and what you built.</p>
+        <p class="post-meta">02 Jul 2026 &nbsp;&middot;&nbsp; 4 min read</p>
+      </article>
+      <article class="post-card" data-tags="gatech">
+        <div class="thumb">
+          <img src="images/post-12.jpg" alt="" onerror="this.parentElement.innerHTML='&lt;span class=thumb-placeholder&gt;images/post-12.jpg&lt;/span&gt;'">
+        </div>
+        <p class="post-eyebrow">Georgia Tech</p>
+        <a class="post-title-link" href="post.html">
+          <h2 class="post-title">Course project title</h2>
+        </a>
+        <p class="post-excerpt">Another course, another deliverable.</p>
+        <p class="post-meta">15 Apr 2026 &nbsp;&middot;&nbsp; 5 min read</p>
+      </article>
+      <article class="post-card" data-tags="ncstate">
+        <div class="thumb">
+          <img src="images/post-13.jpg" alt="" onerror="this.parentElement.innerHTML='&lt;span class=thumb-placeholder&gt;images/post-13.jpg&lt;/span&gt;'">
+        </div>
+        <p class="post-eyebrow">NC State</p>
+        <a class="post-title-link" href="post.html">
+          <h2 class="post-title">Capstone or course project</h2>
+        </a>
+        <p class="post-excerpt">Undergrad work worth keeping around.</p>
+        <p class="post-meta">01 Apr 2025 &nbsp;&middot;&nbsp; 6 min read</p>
+      </article>
+      </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-links">
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://public.tableau.com/app/profile/yourusername" target="_blank" rel="noopener">Tableau Public</a>
+      <a href="mailto:you@example.com">Email</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Your Name</p>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="subscribe-modal" role="dialog" aria-modal="true" aria-labelledby="subscribe-title">
+  <div class="modal">
+    <button class="modal-close" data-subscribe-close aria-label="Close">&times;</button>
+    <h2 id="subscribe-title">Get new posts by email</h2>
+    <p>New projects and writing, sent when I publish. No spam.</p>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="email" name="email" placeholder="name@example.com" required aria-label="Email address">
+      <button type="submit" class="btn-subscribe">Subscribe</button>
+    </form>
+    <p class="modal-note">Unsubscribe anytime.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

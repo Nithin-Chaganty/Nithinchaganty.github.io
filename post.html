@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post title — Your Name</title>
+<meta name="description" content="One-sentence summary of this post.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="writing.html">Writing</a>
+      <a href="school.html">School &amp; Education</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">&#9776;</button>
+      <button class="btn-subscribe" data-subscribe-open>Subscribe</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <article class="article">
+
+      <header class="article-head">
+        <p class="post-eyebrow">Machine Learning</p>
+        <h1>Post title goes here</h1>
+        <p class="post-meta">01 Aug 2026 &nbsp;&middot;&nbsp; 6 min read</p>
+      </header>
+
+      <div class="article-hero">
+        <img src="images/featured.jpg" alt="" onerror="this.parentElement.style.display='none'">
+      </div>
+
+      <div class="article-body">
+
+        <p>
+          Open with the point. For a project write-up: what problem you were solving and why
+          it mattered. For an essay: the idea, stated plainly, in the first two sentences.
+        </p>
+
+        <h2>The problem</h2>
+        <p>
+          What was broken, unknown, or worth investigating. Include the dataset, its size,
+          and where it came from if this is a project.
+        </p>
+
+        <h2>Approach</h2>
+        <p>Walk through what you did. Lists work well here:</p>
+        <ul>
+          <li>Step one — cleaning, joining, whatever came first</li>
+          <li>Step two — the modeling or analysis choice, and why</li>
+          <li>Step three — how you validated it</li>
+        </ul>
+
+        <p>Inline code looks like <code>train_test_split(X, y)</code>. Blocks look like this:</p>
+        <pre><code>from sklearn.ensemble import RandomForestClassifier
+
+model = RandomForestClassifier(n_estimators=200, random_state=42)
+model.fit(X_train, y_train)</code></pre>
+
+        <h2>Results</h2>
+        <p>
+          Lead with the number that matters. Then explain what it means in business terms —
+          not just the metric, but the decision it would support.
+        </p>
+
+        <blockquote>
+          Pull out a key finding or a line worth remembering.
+        </blockquote>
+
+        <h2>What I'd do differently</h2>
+        <p>
+          This section makes write-ups more credible than the ones that only report wins.
+          Name a limitation and what you'd try next.
+        </p>
+
+        <p>
+          Code and data: <a href="https://github.com/yourusername/repo">github.com/yourusername/repo</a>
+        </p>
+
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-links">
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://public.tableau.com/app/profile/yourusername" target="_blank" rel="noopener">Tableau Public</a>
+      <a href="mailto:you@example.com">Email</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Your Name</p>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="subscribe-modal" role="dialog" aria-modal="true" aria-labelledby="subscribe-title">
+  <div class="modal">
+    <button class="modal-close" data-subscribe-close aria-label="Close">&times;</button>
+    <h2 id="subscribe-title">Get new posts by email</h2>
+    <p>New projects and writing, sent when I publish. No spam.</p>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="email" name="email" placeholder="name@example.com" required aria-label="Email address">
+      <button type="submit" class="btn-subscribe">Subscribe</button>
+    </form>
+    <p class="modal-note">Unsubscribe anytime.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

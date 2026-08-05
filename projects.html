@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Your Name</title>
+<meta name="description" content="Machine learning and data science projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="writing.html">Writing</a>
+      <a href="school.html">School &amp; Education</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">&#9776;</button>
+      <button class="btn-subscribe" data-subscribe-open>Subscribe</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-head">
+    <div class="wrap">
+      <h1>Projects</h1>
+      <p>Machine learning and data science work. Each one links out to a repo, a live dashboard, or a full write-up.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+      <div class="filters">
+        <button class="chip is-active" data-filter="all">All</button>
+        <button class="chip" data-filter="ml">Machine Learning</button>
+        <button class="chip" data-filter="ds">Data Science</button>
+        <button class="chip" data-filter="viz">Dashboards</button>
+        <button class="chip" data-filter="sql">SQL</button>
+      </div>
+
+      <div class="feed">
+      <article class="post-card" data-tags="ml">
+        <div class="thumb">
+          <img src="images/post-1.jpg" alt="" onerror="this.parentElement.innerHTML='&lt;span class=thumb-placeholder&gt;images/post-1.jpg&lt;/span&gt;'">
+        </div>
+        <p class="post-eyebrow">Machine Learning</p>
+        <a class="post-title-link" href="post.html">
+          <h2 class="post-title">Project title</h2>
+        </a>
+        <p class="post-excerpt">Problem, model, and the metric that mattered.</p>
+        <p class="post-meta">28 Jul 2026 &nbsp;&middot;&nbsp; 5 min read</p>
+      </article>
+      <article class="post-card" data-tags="ds">
+        <div class="thumb">
+          <img src="images/post-2.jpg" alt="" onerror="this.parentElement.innerHTML='&lt;span class=thumb-placeholder&gt;images/post-2.jpg&lt;/span&gt;'">
+        </div>
+        <p class="post-eyebrow">Data Science</p>
+        <a class="post-title-link" href="post.html">
+          <h2 class="post-title">Project title</h2>
+        </a>
+        <p class="post-excerpt">The dataset, the question, and what you found.</p>
+        <p class="post-meta">20 Jul 2026 &nbsp;&middot;&nbsp; 8 min read</p>
+      </article>
+      <article class="post-card" data-tags="viz">
+        <div class="thumb">
+          <img src="images/post-5.jpg" alt="" onerror="this.parentElement.innerHTML='&lt;span class=thumb-placeholder&gt;images/post-5.jpg&lt;/span&gt;'">
+        </div>
+        <p class="post-eyebrow">Dashboards</p>
+        <a class="post-title-link" href="post.html">
+          <h2 class="post-title">Dashboard title</h2>
+        </a>
+        <p class="post-excerpt">Link this straight to your live Tableau Public viz.</p>
+        <p class="post-meta">25 Jun 2026 &nbsp;&middot;&nbsp; 2 min read</p>
+      </article>
+      <article class="post-card" data-tags="sql">
+        <div class="thumb">
+          <img src="images/post-7.jpg" alt="" onerror="this.parentElement.innerHTML='&lt;span class=thumb-placeholder&gt;images/post-7.jpg&lt;/span&gt;'">
+        </div>
+        <p class="post-eyebrow">SQL</p>
+        <a class="post-title-link" href="post.html">
+          <h2 class="post-title">Query or pipeline project</h2>
+        </a>
+        <p class="post-excerpt">The schema challenge and how you solved it.</p>
+        <p class="post-meta">10 Jun 2026 &nbsp;&middot;&nbsp; 4 min read</p>
+      </article>
+      <article class="post-card" data-tags="ml">
+        <div class="thumb">
+          <img src="images/post-8.jpg" alt="" onerror="this.parentElement.innerHTML='&lt;span class=thumb-placeholder&gt;images/post-8.jpg&lt;/span&gt;'">
+        </div>
+        <p class="post-eyebrow">Machine Learning</p>
+        <a class="post-title-link" href="post.html">
+          <h2 class="post-title">Project title</h2>
+        </a>
+        <p class="post-excerpt">Another model, another result.</p>
+        <p class="post-meta">01 Jun 2026 &nbsp;&middot;&nbsp; 7 min read</p>
+      </article>
+      <article class="post-card" data-tags="ds">
+        <div class="thumb">
+          <img src="images/post-9.jpg" alt="" onerror="this.parentElement.innerHTML='&lt;span class=thumb-placeholder&gt;images/post-9.jpg&lt;/span&gt;'">
+        </div>
+        <p class="post-eyebrow">Data Science</p>
+        <a class="post-title-link" href="post.html">
+          <h2 class="post-title">Project title</h2>
+        </a>
+        <p class="post-excerpt">Exploratory analysis or feature work.</p>
+        <p class="post-meta">22 May 2026 &nbsp;&middot;&nbsp; 6 min read</p>
+      </article>
+      </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-links">
+      <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://public.tableau.com/app/profile/yourusername" target="_blank" rel="noopener">Tableau Public</a>
+      <a href="mailto:you@example.com">Email</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Your Name</p>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="subscribe-modal" role="dialog" aria-modal="true" aria-labelledby="subscribe-title">
+  <div class="modal">
+    <button class="modal-close" data-subscribe-close aria-label="Close">&times;</button>
+    <h2 id="subscribe-title">Get new posts by email</h2>
+    <p>New projects and writing, sent when I publish. No spam.</p>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="email" name="email" placeholder="name@example.com" required aria-label="Email address">
+      <button type="submit" class="btn-subscribe">Subscribe</button>
+    </form>
+    <p class="modal-note">Unsubscribe anytime.</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
