@@ -5,9 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Your Name — Machine Learning &amp; Data Science</title>
 <meta name="description" content="Machine learning and data science projects, plus writing on things I find interesting.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,19 +27,15 @@
 
 <main>
 
-  <!-- ============ HERO — your name + tagline ============ -->
   <section class="hero">
     <div class="wrap">
       <h1>Your Name</h1>
       <p class="hero-tagline">Build, analyze, write.</p>
-      <!-- Swap the tagline for your own 3-4 word line. -->
     </div>
   </section>
 
   <div class="wrap">
 
-    <!-- ============ FEATURED POST ============ -->
-    <!-- Your newest or best piece. Everything else goes in the feed below. -->
     <article class="featured">
       <div class="thumb">
         <img src="images/featured.jpg" alt="" onerror="this.parentElement.innerHTML='&lt;span class=thumb-placeholder&gt;images/featured.jpg&lt;/span&gt;'">
@@ -52,16 +45,11 @@
         <a class="post-title-link" href="post.html">
           <h2 class="post-title">Your featured project or article title</h2>
         </a>
-        <p class="post-excerpt">
-          One or two sentences that make someone want to click. For a project:
-          the problem, your approach, and the result. For an article: the idea in plain terms.
-        </p>
+        <p class="post-excerpt">One or two sentences that make someone want to click.</p>
         <p class="post-meta">01 Aug 2026 &nbsp;·&nbsp; 6 min read</p>
       </div>
     </article>
 
-    <!-- ============ FEED ============ -->
-    <!-- Copy any <article class="post-card"> block below to add a new entry. -->
     <div class="feed">
 
       <article class="post-card">
@@ -152,13 +140,11 @@
   </div>
 </footer>
 
-<!-- ============ SUBSCRIBE MODAL ============ -->
 <div class="modal-backdrop" id="subscribe-modal" role="dialog" aria-modal="true" aria-labelledby="subscribe-title">
   <div class="modal">
     <button class="modal-close" data-subscribe-close aria-label="Close">&times;</button>
     <h2 id="subscribe-title">Get new posts by email</h2>
     <p>New projects and writing, sent when I publish. No spam.</p>
-    <!-- Replace YOUR_FORM_ID with a real endpoint — see README for setup. -->
     <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
       <input type="email" name="email" placeholder="name@example.com" required aria-label="Email address">
       <button type="submit" class="btn-subscribe">Subscribe</button>
