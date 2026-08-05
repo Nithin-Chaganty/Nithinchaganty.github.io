@@ -1,253 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — Business Intelligence &amp; Analytics</title>
-<meta name="description" content="Portfolio of Your Name — BI Analyst, MS Analytics candidate at Georgia Tech. Tableau, SQL, Python, and machine learning projects.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nithin Chaganty, business intelligence, analytics, data science, and machine learning portfolio." />
+  <title>Nithin Chaganty | Analytics Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a href="#top" class="brand">NC<span>.</span></a>
 
-<div class="grain"></div>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
 
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a href="#top" class="logo">yourname<span class="cursor-dot">_</span></a>
-    <nav class="nav">
-      <a href="#about">about</a>
-      <a href="#skills">skills</a>
-      <a href="#projects">projects</a>
-      <a href="#resume">resume</a>
-      <a href="#contact">contact</a>
-    </nav>
-  </div>
-</header>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#top">Home</a>
+        <a href="#featured">Featured Work</a>
+        <a href="#school">School Projects</a>
+        <a href="#writing">Notes & Articles</a>
+        <a href="#about">About</a>
+      </nav>
 
-<main id="top">
-
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="wrap">
-      <p class="eyebrow">business intelligence · analytics</p>
-      <h1>Your Name</h1>
-      <p class="hero-sub">MS Analytics candidate, Georgia Tech &nbsp;·&nbsp; B.S. Business Administration (IT Concentration), NC State</p>
-
-      <div class="query-bar" aria-hidden="false">
-        <div class="query-bar-top">
-          <span class="dot d1"></span><span class="dot d2"></span><span class="dot d3"></span>
-          <span class="query-bar-label">query.sql</span>
-        </div>
-        <pre class="query-bar-body"><code><span class="kw">SELECT</span> name, focus, availability
-<span class="kw">FROM</span> analysts
-<span class="kw">WHERE</span> location = <span class="str">'Raleigh, NC'</span>
-  <span class="kw">AND</span> tools <span class="kw">IN</span> (<span class="str">'SQL'</span>, <span class="str">'Python'</span>, <span class="str">'Tableau'</span>, <span class="str">'Power BI'</span>)
-  <span class="kw">AND</span> open_to_opportunities = <span class="str">TRUE</span><span class="type-cursor">|</span></code></pre>
+      <div class="header-actions">
+        <a class="text-link" href="resume.pdf" target="_blank">Resume</a>
+        <!-- Replace this link with your Buttondown, Substack, or ConvertKit signup URL -->
+        <a class="subscribe-button" href="https://buttondown.email/" target="_blank">Subscribe</a>
       </div>
+    </header>
 
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View projects</a>
-        <a href="resume.pdf" class="btn btn-ghost">Download resume</a>
-        <a href="https://github.com/yourusername" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ABOUT ============ -->
-  <section class="section" id="about">
-    <div class="wrap two-col">
-      <div>
-        <p class="section-label">about</p>
-        <h2>From business fundamentals to applied analytics</h2>
-        <p class="body-text">
-          I'm a recent NC State graduate with a B.S. in Business Administration (IT Concentration),
-          currently pursuing an MS in Analytics at Georgia Tech. I focus on turning messy operational
-          data into dashboards and models that people actually use to make decisions — using SQL,
-          Python, Tableau, Power BI, and machine learning.
+    <main id="top">
+      <section class="hero">
+        <div class="hero-kicker">BUSINESS INTELLIGENCE · ANALYTICS · DATA SCIENCE</div>
+        <h1>Nithin Chaganty</h1>
+        <p class="hero-line">I turn messy data into useful decisions.</p>
+        <p class="hero-copy">
+          NC State graduate and Georgia Tech M.S. Analytics student building dashboards,
+          machine learning models, and practical data products.
         </p>
-        <p class="body-text">
-          <!-- Placeholder: swap in your own 2-3 sentence story — what drew you to analytics,
-               what kind of problems you like solving, what you're looking for next. -->
-          Replace this paragraph with a short, specific story: a project that hooked you on analytics,
-          the kind of problems you gravitate toward, and what you're looking for in your next role.
-        </p>
-      </div>
 
-      <div class="timeline-card">
-        <p class="mono-label">education_log</p>
-        <ul class="timeline">
-          <li>
-            <span class="timeline-date">2026</span>
-            <span class="timeline-body"><strong>MS, Analytics</strong> — Georgia Tech <em>(in progress)</em></span>
-          </li>
-          <li>
-            <span class="timeline-date">2025</span>
-            <span class="timeline-body"><strong>B.S., Business Administration</strong> — IT Concentration, NC State University</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ SKILLS ============ -->
-  <section class="section alt" id="skills">
-    <div class="wrap">
-      <p class="section-label">skills</p>
-      <h2>Toolkit</h2>
-
-      <div class="skills-table" role="table" aria-label="Skills by category">
-        <div class="skills-row skills-head" role="row">
-          <span role="columnheader">category</span>
-          <span role="columnheader">tools</span>
+        <div class="hero-links">
+          <a href="#featured" class="primary-button">Explore my work</a>
+          <a href="https://github.com/Nithin-Chaganty" target="_blank" class="secondary-button">GitHub ↗</a>
+          <a href="#" target="_blank" class="secondary-button">Tableau ↗</a>
         </div>
-        <div class="skills-row" role="row">
-          <span role="cell" class="mono-label">bi_and_viz</span>
-          <span role="cell">Tableau &middot; Tableau Public &middot; Power BI &middot; Excel</span>
+
+        <div class="signal-row">
+          <span>SQL</span>
+          <span>Python</span>
+          <span>Power BI</span>
+          <span>Tableau</span>
+          <span>Machine Learning</span>
         </div>
-        <div class="skills-row" role="row">
-          <span role="cell" class="mono-label">languages</span>
-          <span role="cell">SQL &middot; Python (pandas, scikit-learn) &middot; R <!-- adjust to your actual stack --></span>
+      </section>
+
+      <section id="featured" class="section-block">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>Featured projects</h2>
+          </div>
+          <p>Projects that show how I approach business questions, analysis, and communication.</p>
         </div>
-        <div class="skills-row" role="row">
-          <span role="cell" class="mono-label">machine_learning</span>
-          <span role="cell">Regression &middot; Classification &middot; Clustering <!-- name your actual coursework/project techniques --></span>
+
+        <article class="feature-project">
+          <div class="project-visual dashboard-placeholder">
+            <div class="mock-dashboard">
+              <div class="mock-sidebar"></div>
+              <div class="mock-content">
+                <div class="mock-metrics">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="mock-chart large"></div>
+                <div class="mock-chart small"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-copy">
+            <p class="project-type">BUSINESS INTELLIGENCE</p>
+            <h3>Executive Performance Dashboard</h3>
+            <p>
+              Built an interactive dashboard that tracks revenue, profitability, and regional
+              performance. Designed for fast executive review with clear KPIs, trends, and drilldowns.
+            </p>
+            <ul class="project-details">
+              <li>Power BI</li>
+              <li>SQL</li>
+              <li>DAX</li>
+            </ul>
+            <div class="project-links">
+              <a href="#">View case study</a>
+              <a href="#">View dashboard ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="card-image image-gradient-one">
+              <span class="card-number">01</span>
+            </div>
+            <p class="project-type">MACHINE LEARNING</p>
+            <h3>Customer Churn Prediction</h3>
+            <p>Compared classification models, engineered features, and translated model output into retention recommendations.</p>
+            <div class="meta-row"><span>Python</span><span>scikit-learn</span><span>ROC-AUC</span></div>
+            <a href="#" class="card-link">View project ↗</a>
+          </article>
+
+          <article class="project-card">
+            <div class="card-image image-gradient-two">
+              <span class="card-number">02</span>
+            </div>
+            <p class="project-type">TABLEAU</p>
+            <h3>Regional Sales Explorer</h3>
+            <p>Created an interactive visual story focused on geographic performance, margin, and seasonal patterns.</p>
+            <div class="meta-row"><span>Tableau</span><span>Visualization</span><span>Storytelling</span></div>
+            <a href="#" class="card-link">Open Tableau ↗</a>
+          </article>
+
+          <article class="project-card">
+            <div class="card-image image-gradient-three">
+              <span class="card-number">03</span>
+            </div>
+            <p class="project-type">SQL</p>
+            <h3>SQL Analytics Casebook</h3>
+            <p>A collection of business questions solved with joins, CTEs, window functions, data cleaning, and reusable views.</p>
+            <div class="meta-row"><span>PostgreSQL</span><span>CTEs</span><span>Window Functions</span></div>
+            <a href="#" class="card-link">Explore repository ↗</a>
+          </article>
         </div>
-        <div class="skills-row" role="row">
-          <span role="cell" class="mono-label">data_and_db</span>
-          <span role="cell">Data cleaning &middot; ETL basics &middot; Relational databases</span>
+      </section>
+
+      <section id="school" class="section-block split-section">
+        <div class="sticky-title">
+          <p class="eyebrow">ACADEMIC WORK</p>
+          <h2>School projects</h2>
+          <p>
+            Coursework from NC State and Georgia Tech that demonstrates technical depth,
+            collaboration, and applied problem solving.
+          </p>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ============ PROJECTS ============ -->
-  <section class="section" id="projects">
-    <div class="wrap">
-      <p class="section-label">projects</p>
-      <h2>Selected work</h2>
-      <p class="body-text intro-text">
-        Grouped by tool. Each card links to a live dashboard, a repo, or both —
-        swap the placeholders below with your actual projects.
-      </p>
+        <div class="project-list">
+          <article class="list-project">
+            <div>
+              <span class="project-index">01</span>
+              <p class="project-type">GEORGIA TECH</p>
+              <h3>Predictive Analytics Project</h3>
+              <p>Replace this with a concise description of the course, question, methods, and final result.</p>
+            </div>
+            <a href="#">Details ↗</a>
+          </article>
 
-      <!-- Tableau -->
-      <h3 class="group-title"><span class="mono-label">01</span> Tableau Public dashboards</h3>
-      <div class="card-grid">
-        <article class="card">
-          <div class="card-media">Tableau embed placeholder</div>
-          <div class="card-body">
-            <h4>Project title</h4>
-            <p>One sentence: the business question this dashboard answers, and who'd use it.</p>
-            <p class="card-meta">Tableau · [dataset/domain]</p>
-            <a href="#" class="card-link">View on Tableau Public →</a>
+          <article class="list-project">
+            <div>
+              <span class="project-index">02</span>
+              <p class="project-type">NC STATE</p>
+              <h3>Business Systems Analysis</h3>
+              <p>Show the business problem, your role, tools used, and what changed because of the work.</p>
+            </div>
+            <a href="#">Details ↗</a>
+          </article>
+
+          <article class="list-project">
+            <div>
+              <span class="project-index">03</span>
+              <p class="project-type">CAPSTONE</p>
+              <h3>Analytics Capstone</h3>
+              <p>Use this section for your strongest team or client-facing academic project.</p>
+            </div>
+            <a href="#">Details ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="writing" class="section-block">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">BUILDING IN PUBLIC</p>
+            <h2>Notes, articles, and works in progress</h2>
           </div>
-        </article>
-        <article class="card">
-          <div class="card-media">Tableau embed placeholder</div>
-          <div class="card-body">
-            <h4>Project title</h4>
-            <p>Problem → approach → what the dashboard reveals, in one or two lines.</p>
-            <p class="card-meta">Tableau · [dataset/domain]</p>
-            <a href="#" class="card-link">View on Tableau Public →</a>
+          <p>A place for project breakdowns, lessons learned, and ideas I am currently exploring.</p>
+        </div>
+
+        <div class="writing-grid">
+          <article class="writing-card">
+            <p class="project-type">PROJECT NOTE</p>
+            <h3>What I learned rebuilding a dashboard for executives</h3>
+            <p>Write about a design choice, technical challenge, or insight that made your work better.</p>
+            <span>5 min read</span>
+          </article>
+
+          <article class="writing-card">
+            <p class="project-type">WORK IN PROGRESS</p>
+            <h3>Building a job market analytics pipeline</h3>
+            <p>Document an active project, your next milestone, and the questions you are trying to answer.</p>
+            <span>Updated monthly</span>
+          </article>
+
+          <article class="writing-card">
+            <p class="project-type">PERSONAL ARTICLE</p>
+            <h3>Why business context matters more than a perfect model</h3>
+            <p>Use personal writing to show how you think, not just what tools you know.</p>
+            <span>4 min read</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section-block about-section">
+        <div>
+          <p class="eyebrow">ABOUT</p>
+          <h2>Analytical, practical, and curious.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            I earned my B.S. in Business Administration with an Information Technology
+            concentration from NC State and am currently pursuing an M.S. in Analytics at Georgia Tech.
+          </p>
+          <p>
+            I enjoy projects where data has to be cleaned, understood, visualized, and turned into
+            a decision someone can actually use.
+          </p>
+
+          <div class="contact-links">
+            <a href="mailto:your-email@example.com">Email ↗</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn ↗</a>
+            <a href="https://github.com/Nithin-Chaganty" target="_blank">GitHub ↗</a>
           </div>
-        </article>
-      </div>
+        </div>
+      </section>
+    </main>
 
-      <!-- SQL -->
-      <h3 class="group-title"><span class="mono-label">02</span> SQL &amp; data projects</h3>
-      <div class="card-grid">
-        <article class="card">
-          <div class="card-media code-media"><code>SELECT ... FROM ... WHERE ...</code></div>
-          <div class="card-body">
-            <h4>Project title</h4>
-            <p>What the dataset was, the query/schema challenge, and the result (e.g. "reduced report runtime," "surfaced X insight").</p>
-            <p class="card-meta">SQL · [database/platform]</p>
-            <a href="https://github.com/yourusername/repo" class="card-link" target="_blank" rel="noopener">View on GitHub →</a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="card-media code-media"><code>SELECT ... FROM ... WHERE ...</code></div>
-          <div class="card-body">
-            <h4>Project title</h4>
-            <p>Same structure: problem, approach, quantified result where possible.</p>
-            <p class="card-meta">SQL · [database/platform]</p>
-            <a href="https://github.com/yourusername/repo" class="card-link" target="_blank" rel="noopener">View on GitHub →</a>
-          </div>
-        </article>
-      </div>
-
-      <!-- Python / ML -->
-      <h3 class="group-title"><span class="mono-label">03</span> Python &amp; machine learning</h3>
-      <div class="card-grid">
-        <article class="card">
-          <div class="card-media code-media"><code>model.fit(X_train, y_train)</code></div>
-          <div class="card-body">
-            <h4>Project title</h4>
-            <p>The prediction/classification task, the model type, and a key metric (accuracy, R², etc.).</p>
-            <p class="card-meta">Python · scikit-learn</p>
-            <a href="https://github.com/yourusername/repo" class="card-link" target="_blank" rel="noopener">View on GitHub →</a>
-          </div>
-        </article>
-      </div>
-
-      <!-- School projects -->
-      <h3 class="group-title"><span class="mono-label">04</span> Academic projects</h3>
-      <div class="card-grid">
-        <article class="card">
-          <div class="card-media">Screenshot / chart placeholder</div>
-          <div class="card-body">
-            <h4>Course project title</h4>
-            <p>Course name, the analytical task, and what you learned or delivered.</p>
-            <p class="card-meta">Georgia Tech / NC State coursework</p>
-            <a href="#" class="card-link">Details →</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ RESUME ============ -->
-  <section class="section alt" id="resume">
-    <div class="wrap resume-block">
-      <div>
-        <p class="section-label">resume</p>
-        <h2>Full resume</h2>
-        <p class="body-text">Download the PDF or view it inline below.</p>
-        <a href="resume.pdf" class="btn btn-primary" download>Download PDF</a>
-      </div>
-      <div class="resume-embed">
-        <!-- Replace resume.pdf with your actual filename, uploaded alongside index.html -->
-        <embed src="resume.pdf" type="application/pdf" width="100%" height="500px" />
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="section" id="contact">
-    <div class="wrap contact-block">
-      <p class="section-label">contact</p>
-      <h2>Let's talk</h2>
-      <p class="body-text">Open to Business Intelligence Analyst and Data Analyst roles.</p>
-      <div class="contact-links">
-        <a href="mailto:you@example.com">you@example.com</a>
-        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://public.tableau.com/app/profile/yourusername" target="_blank" rel="noopener">Tableau Public</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <p>Built with plain HTML/CSS, hosted on GitHub Pages.</p>
+    <footer>
+      <p>© <span id="year"></span> Nithin Chaganty</p>
+      <p>Built with HTML, CSS, JavaScript, and curiosity.</p>
+    </footer>
   </div>
-</footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
