@@ -329,3 +329,4 @@ a:focus-visible,button:focus-visible,input:focus-visible{
   *{animation:none !important; transition:none !important;}
   html{scroll-behavior:auto;}
 }
+.btn-subscribe, .modal-backdrop { display: none !important; }
