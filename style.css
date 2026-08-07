@@ -4,16 +4,16 @@
    ============================================================ */
 
 :root{
-  --bg:#131313;
-  --bg-raised:#1C1C1C;
-  --text:#FFFFFF;
-  --text-secondary:#B4B4B4;
-  --text-muted:#7A7A7A;
-  --border:#2A2A2A;
-  --accent:#A0A0A0;
-  --pill-bg:#FFFFFF;
-  --pill-text:#131313;
-  --font:Arial,Helvetica,sans-serif;
+  --bg:#F5F5F0;
+  --bg-raised:#FFFFFF;
+  --text:#111111;
+  --text-secondary:#444444;
+  --text-muted:#888888;
+  --border:#E0E0E0;
+  --accent:#111111;
+  --pill-bg:#111111;
+  --pill-text:#FFFFFF;
+  --font:Georgia,'Times New Roman',serif;
   --max-w:1200px;
   --radius:6px;
 }
