@@ -44,7 +44,7 @@ a{color:inherit; text-decoration:none;}
 /* ---------------- header / nav ---------------- */
 .site-header{
   position:sticky; top:0; z-index:60;
-  background:rgba(19,19,19,0.9);
+  background:#E8E8E2;
   backdrop-filter:blur(10px);
 }
 .header-inner{
